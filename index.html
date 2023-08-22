@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.min.css">
+    <title>Select Component</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <div class="w-full mx-auto xl:max-w-7xl">
+                <div class="flex flex-col" style="padding-top: 80px; gap: 32px;">
+                    <div class="w-1/2">
+                        <p>Select with single choice</p>
+                        <div wp-select id="single-choice" class="wp-select" >
+                            <div wp-select-container class="wp-select-container">
+                                <div class="wp-select-items">
+                                    <input type="text" readonly placeholder="Sort by" class="focus:outline-none placeholder:text-wp-neutral-1-300 rounded-l bg-transparent">
+                                </div>
+                                <button wp-select-delete class="hidden text-wp-neutral-1-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M5.33334 15.8333L4.16667 14.6667L8.83334 10L4.16667 5.33334L5.33334 4.16667L10 8.83334L14.6667 4.16667L15.8333 5.33334L11.1667 10L15.8333 14.6667L14.6667 15.8333L10 11.1667L5.33334 15.8333Z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+                                <button wp-select-toggle class="hover:bg-wp-neutral-2-100 p-3.5 rounded-r">
+                                    <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Fill/chevron-down">
+                                        <path id="Vector" d="M10.5893 13.1043C10.2638 13.4297 9.73618 13.4297 9.41074 13.1043L5 8.69352L6.16667 7.52686L10 11.3602L13.8333 7.52686L15 8.69352L10.5893 13.1043Z" fill="currentColor"/>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div wp-select-panel class="wp-select-panel hidden">
+                                <div class="flex flex-col border border-primary-1 gap-4.5 py-1.5 text-wp-neutral-1-500 bg-white shadow-1-lg rounded">
+                                    <p class="wp-select-value" wp-select-value="1">Text 1</p>
+                                    <p class="wp-select-value" wp-select-value="2">Text 2</p>
+                                    <p class="wp-select-value" wp-select-value="3">Text 3</p>
+                                    <p class="wp-select-value" wp-select-value="4">Text 4</p>
+                                    <p class="wp-select-value" wp-select-value="5">Text 5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-1/2">
+                        <p>Select with multiple choice</p>
+                        <div wp-select id="multiple-choice" class="wp-select">
+                            <div wp-select-container class="wp-select-container">
+                                <div wp-select-multiple class="wp-select-items">
+                                    <input type="text" readonly placeholder="Sort by" class="focus:outline-none placeholder:text-wp-neutral-1-300 rounded-l bg-transparent">
+                                </div>
+    
+                                <button wp-select-delete class="hidden text-wp-neutral-1-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M5.33334 15.8333L4.16667 14.6667L8.83334 10L4.16667 5.33334L5.33334 4.16667L10 8.83334L14.6667 4.16667L15.8333 5.33334L11.1667 10L15.8333 14.6667L14.6667 15.8333L10 11.1667L5.33334 15.8333Z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+                                <button wp-select-toggle class="hover:bg-wp-neutral-2-100 p-3.5 rounded-r">
+                                    <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Fill/chevron-down">
+                                        <path id="Vector" d="M10.5893 13.1043C10.2638 13.4297 9.73618 13.4297 9.41074 13.1043L5 8.69352L6.16667 7.52686L10 11.3602L13.8333 7.52686L15 8.69352L10.5893 13.1043Z" fill="currentColor"/>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div wp-select-panel class="wp-select-panel hidden">
+                                <div class="flex flex-col border border-primary-1 gap-4.5 py-1.5 text-wp-neutral-1-500 bg-white shadow-1-lg rounded">
+                                    <p class="wp-select-value" wp-select-value="value1">Lorem ipsum dolor</p>
+                                    <p class="wp-select-value" wp-select-value="value2">Cumque, ipsum aperiam.</p>
+                                    <p class="wp-select-value" wp-select-value="value3">Sit amet consectetur adipisicing elit</p>
+                                    <p class="wp-select-value" wp-select-value="value4">Text 1</p>
+                                    <p class="wp-select-value" wp-select-value="value5">Text 2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+<script src="./index.min.js"></script>
+</html>
